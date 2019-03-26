@@ -67,9 +67,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\Styles.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="EditPhoneBook.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditPhoneBook.aspx.cs">
+      <DependentUpon>EditPhoneBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditPhoneBook.aspx.designer.cs">
+      <DependentUpon>EditPhoneBook.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +97,20 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneBook.Domain.Core\PhoneBook.Domain.Core.csproj">
+      <Project>{6831b5bc-d78d-4925-a741-2b156ed602cc}</Project>
+      <Name>PhoneBook.Domain.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhoneBook.Domain.Interfaces\PhoneBook.Domain.Interfaces.csproj">
+      <Project>{8a8f8674-e692-473b-b6b1-a58637fe0108}</Project>
+      <Name>PhoneBook.Domain.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhoneBook.Infrastructure.Data\PhoneBook.Infrastructure.Data.csproj">
+      <Project>{541e6f9e-6c2d-4c61-8018-36c2d6bdbd8a}</Project>
+      <Name>PhoneBook.Infrastructure.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,38 @@
+﻿#PhoneBook label {
+    width: 120px;
+    display: inline-block;
+}
+
+#PhoneBook input {
+    margin: 2px;
+    margin-left: 4px;
+    width: 150px;
+}
+
+#PhoneBook select {
+    margin: 2px 0;
+    width: 154px;
+}
+
+button[type=submit] {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+button[type=button] {
+    margin-top: 15px;
+    padding: 5px;
+}
+
+table, td, th {
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: lemonchiffon;
+    text-align: left;
+    margin: 10px 0;
+}
+
+#validationSummary {
+    color: red;
+}
